@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Super Cats</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body> 
+<!-- navigation bar -->
+  <nav>
+    <div class="nav">
+      <div class="logo">
+        <img src="assets/cat.png" alt="logo cat" width="100px"> <h3>Super Cats</h3>
+          </div>
+            <div class="menu">
+              <button onclick="myFunction()">Dark Mode</button>
+              <a href="index.html">Home</a>
+              <a href="about.html">About</a>
+              <a href="contact.html">Contact</a>
+            </div>
+        </div>
+  </nav>
+<!-- main class -->
+  <main>
+    <div class="title">
+      <br>
+      <br>
+      <h1>Cat Photo App</h1>
+      <p style="text-shadow: 1px 1px #918686;">this is an app about the most cutest creatures in the world</p>
+      <br>
+      <br>
+    </div>
+
+      <article id="cat-photos">   
+        <div class="catphoto">
+          <h2>Cat Photos</h2> 
+        </div>
+
+        <div class="container">
+            <div class="img"  id="one">
+            <img src="https://pixelz.cc/wp-content/uploads/2017/11/sleeping-grey-kitten-uhd-8k-wallpaper.jpg" alt="cat photo" width="100%" height="100%">
+            </div> 
+
+            <div class="img" id="two">
+              <img src="https://2.bp.blogspot.com/-hQbRVdGH-lc/VW4OXycUmUI/AAAAAAAAEQQ/GwXyICxS0Ac/s1600/Cute-kitten-Cats-Picture.jpg" alt="cat photo" width="100%" height="100%"> 
+            </div>
+
+              <div class="img" id="three">
+              <img src="https://th.bing.com/th/id/OIP.99-Ub0vugOXKqI7ZrOpiLwHaE8?pid=ImgDet&rs=1" alt="cat photo" width="100%" height="100%">
+              </div>
+
+              <div class="img" id="four">
+                <img src="https://th.bing.com/th/id/OIP.ZVGx-3dgXyIBnfobUdpMMwHaE8?pid=ImgDet&rs=1" alt="cat photo" width="100%" height="100%">
+              </div>
+
+              <div class="img" id="five">
+                <img src="https://th.bing.com/th/id/OIP.b75wsUso03rbXnv0EQoSXwHaE9?w=300&h=200&c=7&r=0&o=5&pid=1.7" alt="cat photo" width="100%" height="100%">
+              </div> 
+              <div class="img" id="six">
+                <img src="https://cdn.wallpapersafari.com/72/94/zsXyhd.jpg" alt="cat photo" width="100%" height="100%">
+              </div> 
+          </div>
+            </article>
+
+    <article id="cat-facts">
+      <div class="facts-about">
+        <h2>Facts about cat</h2>
+        </div>
+          <div class="facts">
+            <ul>
+              <li>Cats are the most popular pet in the USA. There are 88 million cats kept as pets!</li>
+              <li> Cats have over 30 muscles that control their ears.</li>
+              <li>Cats sleep 70% of their lives, and in some pretty crazy positions.</li>
+              <li>A cat fact you've probably noticed in your feline, your kitty has the ability to rotate their ears 180 degrees.</li>
+              <li>A cat’s nose is as unique as a human fingerprint. One cat, Oz, even has a Map of Australia on Her Nose! </li>
+              <li>Unlike humans, cats cannot detect sweetness – which explains why they are not drawn to it.</li>
+            </ul>
+              <figure>
+                <img src="https://images.hdqwalls.com/download/cute-kitten-4k-im-1920x1080.jpg" alt="cat" width="100%">
+              </figure>
+          </div>
+    </article>
+
+  <article id="cat-video">
+    <div class="video-title">
+      <h2>A cute baby cat video!</h2>
+    </div>
+        <div class="video">
+          <iframe width="100%" height="600px" src="https://www.youtube.com/embed/BFNekjEgvuk?si=PUjVICLIANsdtFRz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+  </article>
+    <br>
+    <article id="iform">
+      <div class="forms">
+        <h2>Join our Super Cats community!</h2>
+        <form id="form" onsubmit="return validateForm()">
+
+          <div class="form-personal" >
+              <fieldset>
+                <legend><h3>Personal Data:</h3></legend>
+              <label for="fname">Full name:</label>
+              <br>
+                <input type="text" id="fname" name="fname">
+                  <br>
+                  <br>
+                  <label for="email">Email:</label>
+                  <br>
+                  <input type="text" id="email" name="email">
+                  <br>
+                  <br>
+                  <label for="date">Date of birth:</label>
+                  <br>
+                  <input type="date" type="date"  value="2023-11-02" required>
+                <br>
+              <p> Are you living in indonesia?</p>
+              <input type="radio" id="yes" name="yes" value="yes">
+              <label for="yes">Yes</label>
+              <input type="radio" id="no" name="no" value="no">
+              <label for="no">No</label>
+              <br>
+              <br>
+            </fieldset>
+          </div>
+            
+          <div class="form-information">
+              <fieldset>
+                <legend><h3>Additional information:</h3></legend>
+                  <p> What do you think about a cat</p>
+                  <input type="checkbox" id="cat1" name="cat1" value="cute">
+                  <label for="cat1">cute </label>
+                  <input type="checkbox" id="cat2" name="cat2" value="adorable">
+                  <label for="cat2">adorable </label>
+                  <input type="checkbox" id="cat3" name="cat3" value="funny">
+                  <label for="cat3">funny </label>
+                  <br>
+                  <p>Tell us why you love cats!</p>
+                  <textarea name="textarea" id="catstext" cols="30" rows="4" ></textarea>
+                  <br>
+                  <p>Upload your favorite cat picture here:</p>
+                  <input type="file" id="mycat" name="Catimg">
+                </fieldset>
+            </div>
+            
+          <fieldset>
+            <button type="submit" class="button-submit">Submit</button>
+          </fieldset>
+        </form>
+        <br>
+      </div>
+    </article>
+  </main>
+  
+  <footer>
+    <p>&copy;umartsaqib</p>
+  </footer>
+  <script src="index.js"></script>
+</body>
+</html>
