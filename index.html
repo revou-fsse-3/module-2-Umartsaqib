@@ -12,10 +12,11 @@
   <nav>
     <div class="nav">
       <div class="logo">
-        <img src="assets/cat.png" alt="logo cat" width="100px"> <h3>Super Cats</h3>
+        <img src="assets/cat.png" alt="logo cat" width="100px"> 
+        <h3>Super Cats</h3>
           </div>
             <div class="menu">
-              <button onclick="myFunction()">Dark Mode</button>
+              <button id="night-mode-button">Night Mode</button>
               <a href="index.html">Home</a>
               <a href="about.html">About</a>
               <a href="contact.html">Contact</a>
@@ -32,34 +33,34 @@
       <br>
       <br>
     </div>
-
+  </main>
       <article id="cat-photos">   
         <div class="catphoto">
           <h2>Cat Photos</h2> 
         </div>
 
         <div class="container">
-            <div class="img"  id="one">
-            <img src="https://pixelz.cc/wp-content/uploads/2017/11/sleeping-grey-kitten-uhd-8k-wallpaper.jpg" alt="cat photo" width="100%" height="100%">
+            <div class="image"  id="one">
+            <img src="assets/cat1.jpg" alt="cat photo" width="100%" height="100%">
             </div> 
 
-            <div class="img" id="two">
-              <img src="https://2.bp.blogspot.com/-hQbRVdGH-lc/VW4OXycUmUI/AAAAAAAAEQQ/GwXyICxS0Ac/s1600/Cute-kitten-Cats-Picture.jpg" alt="cat photo" width="100%" height="100%"> 
+            <div class="image" id="two">
+              <img src="assets/cat2.jpg" alt="cat photo" width="100%" height="100%"> 
             </div>
 
-              <div class="img" id="three">
-              <img src="https://th.bing.com/th/id/OIP.99-Ub0vugOXKqI7ZrOpiLwHaE8?pid=ImgDet&rs=1" alt="cat photo" width="100%" height="100%">
+              <div class="image" id="three">
+              <img src="assets/cat3.jpeg" alt="cat photo" width="100%" height="100%">
               </div>
 
-              <div class="img" id="four">
-                <img src="https://th.bing.com/th/id/OIP.ZVGx-3dgXyIBnfobUdpMMwHaE8?pid=ImgDet&rs=1" alt="cat photo" width="100%" height="100%">
+              <div class="image" id="four">
+                <img src="assets/cat4.jpeg" alt="cat photo" width="100%" height="100%">
               </div>
 
-              <div class="img" id="five">
-                <img src="https://th.bing.com/th/id/OIP.b75wsUso03rbXnv0EQoSXwHaE9?w=300&h=200&c=7&r=0&o=5&pid=1.7" alt="cat photo" width="100%" height="100%">
+              <div class="image" id="five">
+                <img src="assets/cat5.jpeg" alt="cat photo" width="100%" height="100%">
               </div> 
-              <div class="img" id="six">
-                <img src="https://cdn.wallpapersafari.com/72/94/zsXyhd.jpg" alt="cat photo" width="100%" height="100%">
+              <div class="image" id="six">
+                <img src="assets/cat6.webp" alt="cat photo" width="100%" height="100%">
               </div> 
           </div>
             </article>
@@ -78,8 +79,11 @@
               <li>Unlike humans, cats cannot detect sweetness – which explains why they are not drawn to it.</li>
             </ul>
               <figure>
+                <picture>
+                <source media="(min-width:768px)" srcset="https://i.pinimg.com/originals/6c/28/ad/6c28ad7ac9caf01dd5072e01728c98ff.jpg">
                 <img src="https://images.hdqwalls.com/download/cute-kitten-4k-im-1920x1080.jpg" alt="cat" width="100%">
-              </figure>
+             </picture>
+            </figure>
           </div>
     </article>
 
@@ -92,6 +96,48 @@
         </div>
   </article>
     <br>
+
+    <article>
+      <div class="cutecats">
+        <h3> Cute Cats images</h3>
+      </div>
+      <div class="carousel">
+        <div class="carousel-inner">
+            <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
+            <div class="carousel-item">
+                <img src="https://th.bing.com/th/id/R.2eb083e85030568ae00b88c9653d935a?rik=EGBZmwzQt%2fNFfw&riu=http%3a%2f%2f3.bp.blogspot.com%2f-FAZFj1rfhcM%2fUWAJFv3cLgI%2fAAAAAAAAST0%2fz2tOipqevdc%2fs1600%2fVery%2bcute%2bcat%2bwallpapers%2b(02).jpg&ehk=gn66RpN38ghxI4g0Kt3049Tmy%2fGRrbrOV6mU0miYtB8%3d&risl=&pid=ImgRaw&r=0">
+            </div>
+            <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
+            <div class="carousel-item">
+                <img src="https://lh6.googleusercontent.com/proxy/mac7bVLXP2QvPBFwXZpC6de57LMU6Ldgat0sdFOzoWkjOZujwvIIA0efnWHQ4FZDvwV_x89lsX10HSLQdLWFCrWeJ-GdgWo_sCzfjZFG1o5o4NI2P_-p_KyIzayLhwUwZdjGwr4Q=w1200-h630-p-k-no-nu">
+            </div>
+            <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
+            <div class="carousel-item">
+                <img src="https://i.pinimg.com/originals/b3/e2/b7/b3e2b7ace0bcaf3053b1c3ce37b44de6.jpg">
+            </div>
+            <label for="carousel-3" class="carousel-control prev control-1">‹</label>
+            <label for="carousel-2" class="carousel-control next control-1">›</label>
+            <label for="carousel-1" class="carousel-control prev control-2">‹</label>
+            <label for="carousel-3" class="carousel-control next control-2">›</label>
+            <label for="carousel-2" class="carousel-control prev control-3">‹</label>
+            <label for="carousel-1" class="carousel-control next control-3">›</label>
+            <ol class="carousel-indicators">
+                <li>
+                    <label for="carousel-1" class="carousel-bullet">•</label>
+                </li>
+                <li>
+                    <label for="carousel-2" class="carousel-bullet">•</label>
+                </li>
+                <li>
+                    <label for="carousel-3" class="carousel-bullet">•</label>
+                </li>
+            </ol>
+        </div>
+    </div>
+    </article>
+
+    <br>
+
     <article id="iform">
       <div class="forms">
         <h2>Join our Super Cats community!</h2>
@@ -150,7 +196,7 @@
         <br>
       </div>
     </article>
-  </main>
+
   
   <footer>
     <p>&copy;umartsaqib</p>
