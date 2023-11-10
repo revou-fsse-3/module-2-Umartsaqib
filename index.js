@@ -61,11 +61,6 @@ function validateForm() {
   return true;
 }
 
-function myFunction() {
-  var element = document.body;
-  element.classList.toggle("dark-mode");
-}
-
 const isNightMode = localStorage.getItem('nightMode');
 
 if (isNightMode === 'enabled') {
